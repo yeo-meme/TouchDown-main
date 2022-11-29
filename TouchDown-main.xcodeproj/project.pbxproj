@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E032D592935E2BB00F00DDB /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E032D582935E2BB00F00DDB /* LogoView.swift */; };
 		3EEB46062934A364004A2D75 /* TouchDown_mainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEB46052934A364004A2D75 /* TouchDown_mainApp.swift */; };
 		3EEB46082934A364004A2D75 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEB46072934A364004A2D75 /* ContentView.swift */; };
 		3EEB460A2934A365004A2D75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EEB46092934A365004A2D75 /* Assets.xcassets */; };
@@ -15,9 +16,13 @@
 		3EEB46182934A61F004A2D75 /* product.json in Resources */ = {isa = PBXBuildFile; fileRef = 3EEB46142934A61F004A2D75 /* product.json */; };
 		3EEB46192934A61F004A2D75 /* category.json in Resources */ = {isa = PBXBuildFile; fileRef = 3EEB46152934A61F004A2D75 /* category.json */; };
 		3EEB461A2934A61F004A2D75 /* brand.json in Resources */ = {isa = PBXBuildFile; fileRef = 3EEB46162934A61F004A2D75 /* brand.json */; };
+		3EEB46262934AC08004A2D75 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEB46252934AC08004A2D75 /* Constant.swift */; };
+		3EEB46282934AC76004A2D75 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEB46272934AC76004A2D75 /* FooterView.swift */; };
+		3EEB46472935D617004A2D75 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEB46462935D617004A2D75 /* NavigationBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E032D582935E2BB00F00DDB /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		3EEB46022934A364004A2D75 /* TouchDown-main.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TouchDown-main.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EEB46052934A364004A2D75 /* TouchDown_mainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchDown_mainApp.swift; sourceTree = "<group>"; };
 		3EEB46072934A364004A2D75 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -28,6 +33,9 @@
 		3EEB46152934A61F004A2D75 /* category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = category.json; sourceTree = "<group>"; };
 		3EEB46162934A61F004A2D75 /* brand.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = brand.json; sourceTree = "<group>"; };
 		3EEB461D2934A694004A2D75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3EEB46252934AC08004A2D75 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		3EEB46272934AC76004A2D75 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		3EEB46462935D617004A2D75 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +68,13 @@
 		3EEB46042934A364004A2D75 /* TouchDown-main */ = {
 			isa = PBXGroup;
 			children = (
-				3EEB461D2934A694004A2D75 /* Info.plist */,
+				3EEB46242934ABBB004A2D75 /* App */,
 				3EEB461C2934A644004A2D75 /* Data */,
-				3EEB46052934A364004A2D75 /* TouchDown_mainApp.swift */,
-				3EEB46072934A364004A2D75 /* ContentView.swift */,
+				3EEB46212934AB7F004A2D75 /* Model */,
+				3EEB46202934AB5D004A2D75 /* Extension */,
+				3EEB461F2934AB4D004A2D75 /* Utility */,
+				3EEB461E2934AB34004A2D75 /* View */,
+				3EEB461D2934A694004A2D75 /* Info.plist */,
 				3EEB46092934A365004A2D75 /* Assets.xcassets */,
 				3EEB460B2934A365004A2D75 /* Preview Content */,
 			);
@@ -87,6 +98,63 @@
 				3EEB46142934A61F004A2D75 /* product.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		3EEB461E2934AB34004A2D75 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3EEB46232934AB9F004A2D75 /* Home */,
+				3EEB46222934AB97004A2D75 /* Detail */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3EEB461F2934AB4D004A2D75 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				3EEB46252934AC08004A2D75 /* Constant.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		3EEB46202934AB5D004A2D75 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3EEB46212934AB7F004A2D75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3EEB46222934AB97004A2D75 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		3EEB46232934AB9F004A2D75 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3EEB46272934AC76004A2D75 /* FooterView.swift */,
+				3EEB46462935D617004A2D75 /* NavigationBarView.swift */,
+				3E032D582935E2BB00F00DDB /* LogoView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3EEB46242934ABBB004A2D75 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3EEB46052934A364004A2D75 /* TouchDown_mainApp.swift */,
+				3EEB46072934A364004A2D75 /* ContentView.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,7 +232,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EEB46082934A364004A2D75 /* ContentView.swift in Sources */,
+				3E032D592935E2BB00F00DDB /* LogoView.swift in Sources */,
+				3EEB46282934AC76004A2D75 /* FooterView.swift in Sources */,
 				3EEB46062934A364004A2D75 /* TouchDown_mainApp.swift in Sources */,
+				3EEB46262934AC08004A2D75 /* Constant.swift in Sources */,
+				3EEB46472935D617004A2D75 /* NavigationBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
