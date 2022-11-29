@@ -22,6 +22,10 @@ struct NavigationBarView: View {
                 
             Spacer()
             
+            LogoView()
+            
+            Spacer()
+            
             Button(action: {}, label: {
                 ZStack {
                  Image(systemName: "cart")
