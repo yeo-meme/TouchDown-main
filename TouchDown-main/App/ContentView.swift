@@ -34,7 +34,14 @@ struct ContentView: View {
                 ScrollView(.vertical, showsIndicators: false, content: {
                     VStack(spacing: 0) {
                         
-                        FeaturedTabView().padding(.vertical, 20 )
+                        FeaturedTabView()
+                            .frame(height: UIScreen.main.bounds.width/1.475)
+                            .padding(.vertical, 20)
+                        
+                        CategoryGirdView()
+                        
+                        TitleView(title: "Helmet")
+                        
                         FooterView().padding(.horizontal)
                     }
                 })
