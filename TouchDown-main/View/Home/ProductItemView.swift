@@ -10,6 +10,7 @@ import SwiftUI
 struct ProductItemView: View {
     
     let product: Product
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 6, content: {
             //PHOTO
@@ -29,7 +30,7 @@ struct ProductItemView: View {
                 .fontWeight(.black)
             
             //PRICE
-            Text("$\(product.price)")
+            Text(product.formattedPrice)
                 .fontWeight(.semibold)
                 .foregroundColor(.gray)
         }) // : VSTACK
