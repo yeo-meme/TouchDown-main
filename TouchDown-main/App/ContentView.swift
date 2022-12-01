@@ -52,8 +52,11 @@ struct ContentView: View {
                                 ForEach(products) { product in
                                     ProductItemView(product: product)
                                     //아이템 터치 제스쳐
-                                    //Utility shop class : 헬멧 아이템 누르면 이동하기
+                                    
                                         .onTapGesture {
+                                            //constant UIImpactFeedbackGenerator
+                                            feedback.impactOccurred()
+                                            //Utility shop class : 헬멧 아이템 누르면 이동하기
                                             withAnimation(.easeOut) {
                                                 shop.selectedProduct = product
                                                 shop.showingProduct = true
