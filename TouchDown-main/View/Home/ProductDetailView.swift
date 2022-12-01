@@ -43,6 +43,16 @@ struct ProductDetailView: View {
                         .multilineTextAlignment(.leading)
                 })
                 
+                
+                //QUANTITY + FAVOURITE
+                QuantityFavouriteDetailView()
+                    .padding(.vertical, 10)
+                
+                
+              
+                 //ADD TO CART
+                AddtoCartDetailView()
+                    .padding(.bottom, 20)
                 Spacer()
             })
             .padding(.horizontal)
@@ -51,9 +61,7 @@ struct ProductDetailView: View {
                 .clipShape(CoustomShape())
                 .padding(.top, -105)
             )
-           
-            //QUANTITY + FAVOURITE
-            //ADD TO CART
+         
       
         }) //: VSTACK
         .zIndex(0)
