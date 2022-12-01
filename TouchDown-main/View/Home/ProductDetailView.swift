@@ -26,11 +26,25 @@ struct ProductDetailView: View {
                 .padding(.horizontal)
             
             //DETAIL BOTTOM PART
-            //PARINGS + SIZES
-            //DESCRIPTION
+            VStack(alignment: .center, spacing: 0, content: {
+                //PARINGS + SIZES
+               
+                //DESCRIPTION
+                ScrollView(.vertical, showsIndicators: false,content: {
+                    Text(sampleProduct.description)
+                        .font(.system(.body, design: .rounded))
+                        .foregroundColor(.gray)
+                        .multilineTextAlignment(.leading)
+                })
+                
+                Spacer()
+            })
+            .padding(.horizontal)
+            .background(Color.white)
+           
             //QUANTITY + FAVOURITE
             //ADD TO CART
-            Spacer()
+      
         }) //: VSTACK
         .ignoresSafeArea(.all, edges: .all)
         .background(
