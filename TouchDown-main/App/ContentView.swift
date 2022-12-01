@@ -20,6 +20,7 @@ struct ContentView: View {
                 NavigationBarView()
                     .padding(.horizontal, 15)
                     .padding(.bottom)
+                
                 //네이게이션 노치 적용
                     .padding(.top,
                              UIApplication.shared.windows.first?.safeAreaInsets.top)
@@ -50,6 +51,8 @@ struct ContentView: View {
                         .padding(15)
                         
                         
+                        TitleView(title: "Brands")
+                        BrandGridView()
                         
                         FooterView().padding(.horizontal)
                     }
