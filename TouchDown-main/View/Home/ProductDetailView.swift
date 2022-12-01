@@ -21,13 +21,19 @@ struct ProductDetailView: View {
             HeaderDetilView()
                 .padding(.horizontal)
 //            Text(sampleProduct.name)
+          
+            
             //DETAIL TOP PART
             TopPartDetailView()
                 .padding(.horizontal)
+                .zIndex(1)
             
             //DETAIL BOTTOM PART
             VStack(alignment: .center, spacing: 0, content: {
                 //PARINGS + SIZES
+                RatingSizesDetailView()
+                    .padding(.top, -20)
+                    .padding(.bottom, 10)
                
                 //DESCRIPTION
                 ScrollView(.vertical, showsIndicators: false,content: {
@@ -40,12 +46,17 @@ struct ProductDetailView: View {
                 Spacer()
             })
             .padding(.horizontal)
-            .background(Color.white)
+            //커스텀 쉐이프 적용 (Utility-> CoustomShape)
+            .background(Color.white
+                .clipShape(CoustomShape())
+                .padding(.top, -105)
+            )
            
             //QUANTITY + FAVOURITE
             //ADD TO CART
       
         }) //: VSTACK
+        .zIndex(0)
         .ignoresSafeArea(.all, edges: .all)
         .background(
             Color(
